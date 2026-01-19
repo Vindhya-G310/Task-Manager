@@ -1,6 +1,8 @@
 async function fetchTaskAPI(handleResponse, handleError) {
   try {
     const baseUrl = import.meta.env.VITE_APP_API_BASE_URL;
+    console.log(baseUrl);
+
     const endPoint = "/tasks";
     const url = `${baseUrl}${endPoint}`;
 
